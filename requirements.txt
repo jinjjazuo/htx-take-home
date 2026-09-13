@@ -16,6 +16,10 @@ langchain-core==1.6.2
 langchain-google-genai==4.4.0
 pydantic==2.13.5             # extraction schemas / structured output
 
+# Part 2 — local MCP server + client
+mcp==1.30.0                  # official MCP SDK (FastMCP server, ClientSession); <2 required by the adapter below
+langchain-mcp-adapters==0.3.2  # MCP tools -> LangChain tools for bind_tools
+
 # Environment + notebook
 python-dotenv==1.2.3
 ipykernel==7.3.0
