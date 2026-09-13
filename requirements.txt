@@ -20,6 +20,9 @@ pydantic==2.13.5             # extraction schemas / structured output
 mcp==1.30.0                  # official MCP SDK (FastMCP server, ClientSession); <2 required by the adapter below
 langchain-mcp-adapters==0.3.2  # MCP tools -> LangChain tools for bind_tools
 
+# Part 3 — multi-agent supervisor
+langgraph==1.2.11            # StateGraph + Send for the supervisor; already installed by langchain, pinned because part3 imports it directly
+
 # Environment + notebook
 python-dotenv==1.2.3
 ipykernel==7.3.0
