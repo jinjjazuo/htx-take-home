@@ -4,7 +4,7 @@ LLM work over one source document: the Singapore Ministry of Finance's *Analysis
 
 | Part | Notebook | What it does |
 |---|---|---|
-| 1. Document Extraction & Prompt Engineering | [`part_1.ipynb`](part_1.ipynb) | Compares four PDF parsers, then extracts five fields with structured LLM output, each carrying a verbatim quote and page, and validates them against values read by hand. |
+| 1. Document Extraction & Prompt Engineering | [`part1.ipynb`](part1.ipynb) | Compares four PDF parsers, then extracts five fields with structured LLM output, each carrying a verbatim quote and page, and validates them against values read by hand. |
 | 2. Tool Calling & Reasoning | [`part2.ipynb`](part2.ipynb) | Extracts two dates, normalises them to ISO format through a **local MCP server**, then has the LLM classify each date against 2024-01-01. |
 | 3. Multi-Agent Supervisor | [`part3.ipynb`](part3.ipynb) | A LangGraph supervisor that routes a question to a Revenue Agent, an Expenditure Agent or both, then writes one answer from their reports. |
 
@@ -16,7 +16,7 @@ Each notebook is written to be read top to bottom: it looks at the document firs
 
 ```
 .
-├── part_1.ipynb                    # Part 1
+├── part1.ipynb                     # Part 1
 ├── part2.ipynb                     # Part 2
 ├── part3.ipynb                     # Part 3
 ├── mcp_servers/

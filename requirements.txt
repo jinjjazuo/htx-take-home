@@ -3,7 +3,7 @@
 #   pip install -r requirements.txt
 
 # PDF parsing
-pdfplumber==0.11.10          # primary parser - keeps table rows on one line (see part_1.ipynb §1.4)
+pdfplumber==0.11.10          # primary parser - keeps table rows on one line (see part1.ipynb §1.4)
 pymupdf==1.28.2              # fast text extraction, used for the page-number check in §1.1
 
 # Optional: docling + markitdown are compared in notebook §1.2-1.3 but are NOT required
