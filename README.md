@@ -121,7 +121,7 @@ flowchart LR
     L --> V["validate: value,<br/>coverage, provenance"]
 ```
 
-- **One LLM call per field, each seeing only its own page(s)** (`FIELD_PAGES`). §2.3 shows a pooled call over several pages taking a correctly labelled figure off the wrong page.
+- **One LLM call per field, each seeing only its own page(s)** (`FIELD_PAGES`). §2.2 shows a pooled call over several pages taking a correctly labelled figure off the wrong page.
 - **Prompt v2 fixes what v1 got wrong** (§3.1–3.2): fields may be `null` when the cited page has no figure for the requested year; Field 5 writes `reasoning`, `financial_year` and `basis` before `value`; the tax list is classified item by item (`is_tax`) and filtered in code.
 - **The LLM never calculates**; every value is one the document states.
 
@@ -248,7 +248,7 @@ Optional (`requirements-parser-eval.txt`), Part 1 §1.2–1.3 only:
 
 | Package | Version | Why it is optional |
 |---|---|---|
-| `docling` | 2.126.0 | Gave the best table structure of the four parsers, but was rejected as the pipeline parser for latency (~57x pdfplumber per page) and size (~1.8GB with torch/transformers, plus a model download on first use). |
+| `docling` | 2.126.0 | Gave the best table structure of the four parsers, but was rejected as the pipeline parser for latency (~58x pdfplumber per page) and size (~1.8GB with torch/transformers, plus a model download on first use). |
 | `markitdown` | 0.1.7 | Rejected: its PDF output for this document's tables was unstable and misaligned (§1.2). Its PDF converter is built on pdfplumber. |
 
 ---
